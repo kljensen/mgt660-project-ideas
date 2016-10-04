@@ -1,0 +1,10 @@
+<script>
+    function replace(button) {
+        console.log(button);
+        var html = button.parentElement.innerHTML;
+        document.getElementsByTagName('ul')[0].innerHTML = 
+            `<li>${html}</li>`;
+    }
+</script>
+A button that takes over all the ideas.
+<button onclick="replace(this)">Click Me</button>
